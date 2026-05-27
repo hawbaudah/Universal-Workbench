@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>UniWorkbenchResearch</defName>
+		<label>universal workbench</label>
+		<description>Develop a single industrial-grade workbench capable of handling most common manufacturing tasks from a single station. Operates at half the speed of dedicated benches. Does not support cooking, drug production, or advanced fabrication.</description>
+		<baseCost>3500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>Main</tab>
+		<prerequisites>
+			<li>Electricity</li>
+			<li>Machining</li>
+		</prerequisites>
+		<researchViewX>9.0</researchViewX>
+		<researchViewY>2.0</researchViewY>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>OmniWorkbenchResearch</defName>
+		<label>omniversal workbench</label>
+		<description>Develop a pinnacle-tier fabrication platform capable of performing every known manufacturing process at full efficiency. Does not support cooking or drug production.</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>Main</tab>
+		<prerequisites>
+			<li>UniWorkbenchResearch</li>
+			<li>Fabrication</li>
+			<li>MicroelectronicsBasics</li>
+		</prerequisites>
+		<researchViewX>11.0</researchViewX>
+		<researchViewY>2.0</researchViewY>
+	</ResearchProjectDef>
+</Defs>

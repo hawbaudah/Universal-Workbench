@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Textures Expanded - Variations</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName = "UniWorkbench"]/comps</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "UniWorkbench"]</xpath>
+						<value>
+							<comps>
+								<li Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+									<randomGraphics>
+										<li>Buildings/UniWorkbench</li>
+										<li>Buildings/UniWorkbenchA</li>
+										<li>Buildings/UniWorkbenchB</li>
+										<li>Buildings/UniWorkbenchC</li>
+										<li>Buildings/UniWorkbenchD</li>
+										<li>Buildings/UniWorkbenchE</li>
+									</randomGraphics>
+									<optionalNames>
+										<li>Standard</li>
+										<li>A</li>
+										<li>B</li>
+										<li>C</li>
+										<li>D</li>
+										<li>E</li>
+									</optionalNames>
+								</li>
+							</comps>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "UniWorkbench"]/comps</xpath>
+						<value>
+							<li Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+								<randomGraphics>
+									<li>Buildings/UniWorkbench</li>
+									<li>Buildings/UniWorkbenchA</li>
+									<li>Buildings/UniWorkbenchB</li>
+									<li>Buildings/UniWorkbenchC</li>
+									<li>Buildings/UniWorkbenchD</li>
+									<li>Buildings/UniWorkbenchE</li>
+								</randomGraphics>
+								<optionalNames>
+									<li>Standard</li>
+									<li>A</li>
+									<li>B</li>
+									<li>C</li>
+									<li>D</li>
+									<li>E</li>
+								</optionalNames>
+							</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName = "OmniWorkbench"]/comps</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "OmniWorkbench"]</xpath>
+						<value>
+							<comps>
+								<li Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+									<randomGraphics>
+										<li>Buildings/OmniWorkbench</li>
+										<li>Buildings/OmniWorkbenchA</li>
+										<li>Buildings/OmniWorkbenchB</li>
+										<li>Buildings/OmniWorkbenchC</li>
+										<li>Buildings/OmniWorkbenchD</li>
+										<li>Buildings/OmniWorkbenchE</li>
+									</randomGraphics>
+									<optionalNames>
+										<li>Standard</li>
+										<li>A</li>
+										<li>B</li>
+										<li>C</li>
+										<li>D</li>
+										<li>E</li>
+									</optionalNames>
+								</li>
+							</comps>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "OmniWorkbench"]/comps</xpath>
+						<value>
+							<li Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+								<randomGraphics>
+									<li>Buildings/OmniWorkbench</li>
+									<li>Buildings/OmniWorkbenchA</li>
+									<li>Buildings/OmniWorkbenchB</li>
+									<li>Buildings/OmniWorkbenchC</li>
+									<li>Buildings/OmniWorkbenchD</li>
+									<li>Buildings/OmniWorkbenchE</li>
+								</randomGraphics>
+								<optionalNames>
+									<li>Standard</li>
+									<li>A</li>
+									<li>B</li>
+									<li>C</li>
+									<li>D</li>
+									<li>E</li>
+								</optionalNames>
+							</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

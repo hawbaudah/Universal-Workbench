@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence" MayRequire="PACKAGE_ID">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="UniWorkbench"]/modExtensions/li[@Class="VEF.Buildings.RecipeInheritanceExtension"]/inheritRecipesFrom</xpath>
+				<value>
+					<li>BENCH_DEFNAME</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="OmniWorkbench"]/modExtensions/li[@Class="VEF.Buildings.RecipeInheritanceExtension"]/inheritRecipesFrom</xpath>
+				<value>
+					<li>BENCH_DEFNAME</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="UniWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+					<li>FACILITY_DEFNAME</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="OmniWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+					<li>FACILITY_DEFNAME</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

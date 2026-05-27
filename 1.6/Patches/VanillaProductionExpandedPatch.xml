@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence" MayRequire="VanillaExpanded.VFEProduction">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="UniWorkbench"]/modExtensions/li[@Class="VEF.Buildings.RecipeInheritanceExtension"]/inheritRecipesFrom</xpath>
+				<value>
+					<li>VFE_TableMachiningLarge</li>
+					<li>VFE_TableTailorLarge</li>
+					<li>VFE_FueledSmelter</li>
+					<li>VFE_TableStonecutterElectric</li>
+					<li>VFE_TableSmithyLarge</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="UniWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+					<li>VFE_MachiningCabinet</li>
+					<li>VFE_TailorCabinet</li>
+					<li>VFE_SmithyCabinet</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="OmniWorkbench"]/modExtensions/li[@Class="VEF.Buildings.RecipeInheritanceExtension"]/inheritRecipesFrom</xpath>
+				<value>
+					<li>VFE_TableMachiningLarge</li>
+					<li>VFE_TableTailorLarge</li>
+					<li>VFE_FueledSmelter</li>
+					<li>VFE_TableStonecutterElectric</li>
+					<li>VFE_TableSmithyLarge</li>
+					<li>VFE_ComponentFabricationBench</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="OmniWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+					<li>VFE_MachiningCabinet</li>
+					<li>VFE_TailorCabinet</li>
+					<li>VFE_SmithyCabinet</li>
+					<li>VFE_FabricationCabinet</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

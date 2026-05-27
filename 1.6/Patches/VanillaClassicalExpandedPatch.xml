@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence" MayRequire="OskarPotocki.VFE.Classical">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="UniWorkbench"]/modExtensions/li[@Class="VEF.Buildings.RecipeInheritanceExtension"]/inheritRecipesFrom</xpath>
+				<value>
+					<li>VFEC_CraftingBench</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="OmniWorkbench"]/modExtensions/li[@Class="VEF.Buildings.RecipeInheritanceExtension"]/inheritRecipesFrom</xpath>
+				<value>
+					<li>VFEC_CraftingBench</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

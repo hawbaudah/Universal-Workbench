@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence" MayRequire="VanillaExpanded.Recycling">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="UniWorkbench"]/modExtensions/li[@Class="VEF.Buildings.RecipeInheritanceExtension"]/inheritRecipesFrom</xpath>
+				<value>
+					<li>VRecyclingE_RecyclingWorkbench</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="OmniWorkbench"]/modExtensions/li[@Class="VEF.Buildings.RecipeInheritanceExtension"]/inheritRecipesFrom</xpath>
+				<value>
+					<li>VRecyclingE_RecyclingWorkbench</li>
+					<li>VRecyclingE_ElectricRecyclingWorkbench</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

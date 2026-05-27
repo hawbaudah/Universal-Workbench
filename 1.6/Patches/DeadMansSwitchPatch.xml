@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence" MayRequire="Aoba.DeadManSwitch.Core">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="UniWorkbench"]/modExtensions/li[@Class="VEF.Buildings.RecipeInheritanceExtension"]/inheritRecipesFrom</xpath>
+				<value>
+					<li>DMS_LabReactor</li>
+					<li>DMS_LabFurnace</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="OmniWorkbench"]/modExtensions/li[@Class="VEF.Buildings.RecipeInheritanceExtension"]/inheritRecipesFrom</xpath>
+				<value>
+					<li>DMS_TableArtifuscle</li>
+					<li>DMS_LabReactor</li>
+					<li>DMS_LabFurnace</li>
+					<li>DMS_TableMachinePrinter</li>
+					<li>DMS_ReactionChamber</li>
+					<li>DMS_Furnace</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="UniWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+					<li>DMS_MachineCabinet</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="OmniWorkbench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+					<li>DMS_MachineCabinet</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
